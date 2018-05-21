@@ -1,3 +1,50 @@
 body {
-    background-color: rgba(218, 212, 32, 0.701);
+    background-color: #EDB84E;
+}
+
+h1 {
+    color: rgb(33, 74, 199);
+}
+
+.image {
+    width: 199px;
+    margin-top: 2%;
+    margin-left: 45%;
+}
+
+#container {
+    margin-top: 4%;
+    margin-left: 42%;
+}
+
+.undevoured {
+    position: relative;
+    right: 20%;
+    margin-top: 4%;
+    list-style-type: none;
+}
+
+.devoured {
+    position: relative;
+    left: 20%;
+    margin-top: 4%;
+    list-style-type: none;
+}
+
+.create-form {
+    margin-top: 4%;
+    position: relative;
+    left: 2.5%;
+}
+
+button {
+    position: relative;
+    left: 2.25%;
+}
+
+li {
+    background-color: azure;
+    width: 177px;
+    padding: 10px;
+    margin: 9px;
 }
