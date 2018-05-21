@@ -8,11 +8,11 @@
 
   <ul class="undevoured">
     {{#each burgers}} {{#unless devoured}}
-    <li data-id="{{id}}" data-newsleep="{{devoured}}">{{burger_name}}</li>
+    <li data-id="{{id}}">{{burger_name}}</li>
     {{/unless}} {{/each}}
   </ul>
 
-<ul>
+<ul class="devoured">
     {{#each burgers}} {{#if devoured}}
     <li>{{burger_name}}</li>
     {{/if}} {{/each}}

@@ -28,7 +28,8 @@ $(".create-form").on("submit", function (event) {
 //Update burger state
 
 $("li").on("click", function (event) {
-   
+   event.preventDefault();
+
     var id = $(this).data("id");
 
     var newDevouredState = {
@@ -44,7 +45,7 @@ $("li").on("click", function (event) {
         function () {
             console.log("changed devoured state to true")
 
-            location.reload();
+           location.reload();
         }
     )
 })

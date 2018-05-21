@@ -24,8 +24,8 @@ var orm = {
         queryString += cols.toString();
         queryString += ") ";
         queryString += "VALUES (";
-        queryString += printQuestionMarks(vals.length);
-        queryString += ") ";
+        queryString += vals;
+        queryString += "); ";
 
         console.log(queryString);
 
@@ -33,7 +33,7 @@ var orm = {
             if (err) {
                 throw err;
             }
-
+            console.log(result)
             cb(result);
         });
     },
@@ -47,7 +47,7 @@ var orm = {
         queryString += " WHERE ";
         queryString += condition;
 
-        console.log(queryString);
+        //console.log(queryString);
 
         connection.query(queryString, function (err, result) {
             if (err) {
