@@ -3,6 +3,8 @@
 $(".create-form").on("submit", function (event) {
     event.preventDefault();
 
+    console.log("hello")
+
     var newBurger = {
         burger_name: $("#bu").val().trim(),
         devoured: false
@@ -26,8 +28,8 @@ $(".create-form").on("submit", function (event) {
 //Update burger state
 
 $("li").on("click", function (event) {
+   
     var id = $(this).data("id");
-    var newDevoured = $(this).data("newdevoured")
 
     var newDevouredState = {
         devoured: true
